@@ -16,7 +16,7 @@ fi
 
 #echo "(3) Release (comitting to a repo)"
 git add .
-git commit -m $1
+git commit -m "$1"
 git push origin main
 
 #echo "(4) Deploy (deployed to production)"

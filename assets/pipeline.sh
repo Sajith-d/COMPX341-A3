@@ -1,7 +1,8 @@
 #!/bin/bash
 echo "(0) Preparing pipeline"
-if [[ "$#" -ne 1 ]]; then
+if [ $# -eq 0 ]; then
     echo "Error: Please provide a custom commit message"
+    exit
 fi
 echo "(1) Build (compiling the application)"
 npm install

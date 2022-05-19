@@ -13,7 +13,7 @@ try:
                         f.write('// Sajith Dhambagolla - 1508789' + '\n')
                 f.close()
     sys.exit(0)
-except:
-    print("Error has occurred when running maintenance task, try again")
-    sys.exit(0)
+except Exception as e: 
+    print(e)
+    sys.exit(1)
 

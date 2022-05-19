@@ -1,4 +1,4 @@
-//
+// Sajith Dhambagolla - 1508789
 export default {
   apiGateway: {
     REGION: "us-east-1",

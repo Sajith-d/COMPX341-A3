@@ -1,4 +1,4 @@
-//
+// Sajith Dhambagolla - 1508789
 export const categories = {
   cooks: "Cookbooks",
   database: "Database",

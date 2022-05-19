@@ -6,12 +6,13 @@ try:
         for name in files:
             path = os.path.join(root, name)
             if(path.endswith(".ts")):
-                with open(path, 'r+') as f:
+                with open(path, 'r') as f:
                     read = f.readlines()
-                    if (read[0] != '// Sajith Dhambagolla - 1508789'):
-                        f.seek(0, 0)
-                        f.write('// Sajith Dhambagolla - 1508789' + '\n')
-                f.close()
+                f.close()             
+                read[0] = "// Sajith Dhambagolla - 1508789" + '\n'
+                with open(path, 'w') as w:
+                    w.writelines(read)
+                w.close()
     sys.exit(0)
 except Exception as e: 
     print(e)
